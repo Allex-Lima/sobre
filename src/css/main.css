@@ -1,0 +1,116 @@
+.main {
+    background-color: #87c8e0;
+    height: 100%;
+}
+
+.resort {
+    text-align: center;
+    /* margin-top: 80px; */
+}
+
+.foto-01 {
+    width: 80%;
+    margin-top: 85px;
+}
+
+.historia {
+    font-size: 14px;
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+h1 {
+    padding: 40px;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.galeria {
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.fotos {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+    25%{
+        opacity: 2;
+        transform: scale(1.1,1.1);
+    }
+
+    50%{
+        opacity: 0;
+    }
+}
+
+.fotos:nth-child(1) {
+    animation-delay: 1s;
+}
+.fotos:nth-child(2) {
+    animation-delay: 15s;
+}
+.fotos:nth-child(3) {
+    animation-delay: 40s;
+}
+.fotos:nth-child(4) {
+    animation-delay: 55s;
+}
+.fotos:nth-child(5) {
+    animation-delay: 70s;
+}
+.fotos:nth-child(6) {
+    animation-delay: 85s;
+}
+
+@media (max-width: 915px) {
+
+
+.historia p {
+    font-size: 14px;
+    text-align: justify;
+    width: 110%;
+    /* margin: 0 0px 0 -11px; */
+    margin-left: -15px;
+    padding: 5px;
+}
+
+    .galeria {
+        margin: 0 auto;
+        width: 350px;
+        height: 270px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    
+    
+    .fotos {
+        width: 350px;
+        height: 270px;
+        position: absolute;
+        opacity: 0;
+        animation-name: animacao;
+        animation-duration: 90s;
+        animation-iteration-count: infinite;
+    }
+    
+
+}

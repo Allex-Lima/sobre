@@ -1,0 +1,18 @@
+.footer {
+       background: #49aaf5;
+}
+
+p{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.icons {
+    text-align: center;
+    padding: 15px;
+}
+
+.icons img {
+    width: 25px;
+    margin-left: 15px;
+}
